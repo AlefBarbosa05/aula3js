@@ -1,16 +1,21 @@
-function calcularMediaGolfinhos(num1, num2, num3) {
-
-    return `A média geral dos golfinhos é: ${( num1 + num2 + num3) / 3}`; 
-}
-
-function calcularMediaCoalas(num4, num5, num6){
-
-    return `A média geral dos coalas é: ${( num4 + num5 + num6) / 3}`; 
+function calcAverage (valor1, valor2, valor3){
+    return(valor1 + valor2 + valor3)
 }
  
-let mediaGolfinhos = calcularMediaGolfinhos (10,10,10);
+let avgDolphins = calcAverage(44,23,0);
+let avgKoalas = calcAverage(44,29,78);
 
-let mediaCoalas = calcularMediaCoalas(12,12,6);
+// criar função para o vencedor 
 
-console.log(mediaGolfinhos, mediaCoalas);
-
+function checkWinner (avgKoalas, avgDolphins) {
+     if (avgKoalas >= avgDolphins *2) {
+         console.log("Os vencedores são os Koalas!!!");
+         
+     }else if(avgDolphins >= avgKoalas *2){
+      console.log ("Os vencedores são os Dolphins!!!"); 
+         
+     }else {
+         console.log ("Houve um empate!!!");
+     }
+}
+checkWinner (avgKoalas, avgDolphins)

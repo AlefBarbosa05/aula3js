@@ -1,24 +1,16 @@
-function nomeCompleto(nome,sobreNome) {
-    
-return "O nome comoleto é: " + nome + " " + sobreNome;
+function calcularMediaGolfinhos(num1, num2, num3) {
 
+    return `A média geral dos golfinhos é: ${( num1 + num2 + num3) / 3}`; 
 }
 
-nomeCompleto ("Alef", "Barbosa");
+function calcularMediaCoalas(num4, num5, num6){
 
-function media(num1, num2, num3) {
-
-    return `A média geral é: ${( num1 + num2 + num3) / 3}`; 
+    return `A média geral dos coalas é: ${( num4 + num5 + num6) / 3}`; 
 }
+ 
+let mediaGolfinhos = calcularMediaGolfinhos (10,10,10);
 
-function media2 (num1, num2){
-        return "A média é:" + (num1+num2)/2;    
-}
+let mediaCoalas = calcularMediaCoalas(12,12,6);
 
-let mediaSam = media2(12,45);
+console.log(mediaGolfinhos, mediaCoalas);
 
-let mediaBlu = media(2,3,5);
-
-let mediaJu = media(6,6,12);
-
-console.log(mediaJu, mediaSam, mediaBlu);
